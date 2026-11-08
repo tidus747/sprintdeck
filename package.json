@@ -1,0 +1,6 @@
+{
+  "name": "sprintdeck-checks",
+  "private": true,
+  "type": "module",
+  "description": "Enables optional JavaScript syntax checks. No Node dependencies or build step."
+}

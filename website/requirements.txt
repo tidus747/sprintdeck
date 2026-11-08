@@ -1,0 +1,2 @@
+# Documentation build only. SprintDeck itself has no third-party runtime dependencies.
+Markdown==3.11.3 --hash=sha256:e1a31a112232504d753e5c01bb8c2de90d3f0ba986b063e10770cf7695b09e73

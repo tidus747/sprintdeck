@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+_site/
+.session/
+sessions/
+imports/
+exports/
+*.session.json
+/sprintdeck-recap*.md
+*.tmp
+.coverage
+.pytest_cache/
+.env
+.env.*
+!.env.example

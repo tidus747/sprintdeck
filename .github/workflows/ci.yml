@@ -1,0 +1,31 @@
+name: Checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ['3.11', '3.14']
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m unittest discover -s tests -v
+      - run: python scripts/check_style.py
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check sprintdeck/static/common.js
+      - run: node --check sprintdeck/static/calendar.js
+      - run: node --check sprintdeck/static/control.js
+      - run: node --check sprintdeck/static/overlay.js
+      - run: node --check scripts/browser_probe.js
+      - run: node --check website/assets/site.js
+      - run: node --check website/demo/compose.js
+      - run: node --check scripts/site_browser_probe.js

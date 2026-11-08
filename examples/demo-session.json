@@ -1,0 +1,305 @@
+{
+  "schema_version": 2,
+  "revision": 0,
+  "session": {
+    "title": "Sprint planning",
+    "created": "2030-04-01",
+    "notes": "Agreed to prioritize automated testing.\nFollow up on the remaining technical validation."
+  },
+  "sprint": {
+    "current": "Sprint 01",
+    "next": "Sprint 02",
+    "start": "2030-04-01",
+    "end": "2030-04-14",
+    "goal": "Complete platform integration validation and improve automated testing.",
+    "status": "Planning",
+    "current_status": "In progress",
+    "summary": "Technical validation in progress.",
+    "carryover": "Documentation improvements",
+    "commitment": "Prioritize validation, testing, and release readiness."
+  },
+  "timers": {
+    "meeting": {
+      "duration": 3600,
+      "remaining": 3600,
+      "deadline": null
+    },
+    "individual": {
+      "duration": 300,
+      "remaining": 300,
+      "deadline": null
+    }
+  },
+  "members": [
+    {
+      "id": "f9540450-bf18-4d3d-b246-19d049ed0e64",
+      "name": "Engineer A",
+      "role": "Engineer",
+      "checks": [
+        {
+          "id": "5a269dc8-f19c-4a16-97a0-c451460b48f5",
+          "label": "Sprint tasks are clearly defined",
+          "checked": false
+        },
+        {
+          "id": "55c263c9-e2bf-4ca5-b716-0fd99f6ad00d",
+          "label": "Planned time off has been reviewed",
+          "checked": false
+        },
+        {
+          "id": "2b6d27a3-fc2c-457a-9c24-536fd7f2e124",
+          "label": "Dependencies have been identified",
+          "checked": false
+        },
+        {
+          "id": "c67ca371-aa99-45db-8c42-14d123d4b814",
+          "label": "Risks and blockers have been reviewed",
+          "checked": false
+        },
+        {
+          "id": "59cd8f86-b8c6-4238-a80a-ce3fa4e5df68",
+          "label": "Sprint commitment has been confirmed",
+          "checked": false
+        }
+      ],
+      "review_override": false,
+      "confirmed": false
+    },
+    {
+      "id": "aac04391-658f-46a2-b533-967313064585",
+      "name": "Engineer B",
+      "role": "Engineer",
+      "checks": [
+        {
+          "id": "0843e42a-6ed1-4957-ba59-453d68caaf2a",
+          "label": "Sprint tasks are clearly defined",
+          "checked": false
+        },
+        {
+          "id": "ace65033-f410-4915-83c7-d87a982f6baa",
+          "label": "Planned time off has been reviewed",
+          "checked": false
+        },
+        {
+          "id": "edd96b1d-319d-4bf8-adb2-dced3d5fcffe",
+          "label": "Dependencies have been identified",
+          "checked": false
+        },
+        {
+          "id": "5aefe98f-b024-46a2-ad0e-636b3529a244",
+          "label": "Risks and blockers have been reviewed",
+          "checked": false
+        },
+        {
+          "id": "2a3d7152-e4be-4086-bda8-690a209902ab",
+          "label": "Sprint commitment has been confirmed",
+          "checked": false
+        }
+      ],
+      "review_override": false,
+      "confirmed": false
+    },
+    {
+      "id": "fccf10eb-c64b-4137-be6b-642df47c2677",
+      "name": "Engineer C",
+      "role": "Engineer",
+      "checks": [
+        {
+          "id": "c2be7df3-6164-49eb-8103-12b036daf5a2",
+          "label": "Sprint tasks are clearly defined",
+          "checked": false
+        },
+        {
+          "id": "0959bab1-4e4f-42bc-8f20-b11605f35562",
+          "label": "Planned time off has been reviewed",
+          "checked": false
+        },
+        {
+          "id": "f9cc2e2d-4c6d-45cf-b434-8c8b33ae5e85",
+          "label": "Dependencies have been identified",
+          "checked": false
+        },
+        {
+          "id": "5be25396-93bf-4b68-8ef6-47f10aa40273",
+          "label": "Risks and blockers have been reviewed",
+          "checked": false
+        },
+        {
+          "id": "34bbfe26-452c-49f1-8579-4af2f32f4705",
+          "label": "Sprint commitment has been confirmed",
+          "checked": false
+        }
+      ],
+      "review_override": false,
+      "confirmed": false
+    },
+    {
+      "id": "284b9919-3777-4641-b155-a869c769fe4e",
+      "name": "Engineer D",
+      "role": "Engineer",
+      "checks": [
+        {
+          "id": "f43d8ff6-c28e-4ea8-b232-35346964d37a",
+          "label": "Sprint tasks are clearly defined",
+          "checked": false
+        },
+        {
+          "id": "2088ad14-ef20-46a9-8a2b-8c8f6ce81ccd",
+          "label": "Planned time off has been reviewed",
+          "checked": false
+        },
+        {
+          "id": "c6ebd099-a499-4193-9eab-6fce39649cc8",
+          "label": "Dependencies have been identified",
+          "checked": false
+        },
+        {
+          "id": "dfc44837-58bd-43a7-9408-40647b1adbbc",
+          "label": "Risks and blockers have been reviewed",
+          "checked": false
+        },
+        {
+          "id": "a488517d-a6be-4142-9498-24e74c75cb15",
+          "label": "Sprint commitment has been confirmed",
+          "checked": false
+        }
+      ],
+      "review_override": false,
+      "confirmed": false
+    },
+    {
+      "id": "fdcd7e3f-ffac-467a-b341-6ac66c865790",
+      "name": "Engineer E",
+      "role": "Engineer",
+      "checks": [
+        {
+          "id": "6c3d29d9-8e48-44f6-96b7-f4147bf85d48",
+          "label": "Sprint tasks are clearly defined",
+          "checked": false
+        },
+        {
+          "id": "6fbc597d-7cb0-4c98-8532-3e61bd47fd78",
+          "label": "Planned time off has been reviewed",
+          "checked": false
+        },
+        {
+          "id": "38c030f7-99ca-4d5a-b069-af607a9bdbf7",
+          "label": "Dependencies have been identified",
+          "checked": false
+        },
+        {
+          "id": "0d08fd17-b69c-4d11-8555-ac1314bed6a9",
+          "label": "Risks and blockers have been reviewed",
+          "checked": false
+        },
+        {
+          "id": "f2ec5a6e-e90f-4914-931c-f8e663d27bda",
+          "label": "Sprint commitment has been confirmed",
+          "checked": false
+        }
+      ],
+      "review_override": false,
+      "confirmed": false
+    }
+  ],
+  "active_member": "f9540450-bf18-4d3d-b246-19d049ed0e64",
+  "roadmap": [
+    {
+      "id": "demo-milestone",
+      "title": "Release readiness",
+      "date": "2030-04-12",
+      "description": "Complete technical validation",
+      "status": "Planned",
+      "color": "purple"
+    }
+  ],
+  "scope": [
+    {
+      "id": "demo-scope",
+      "title": "Automated testing",
+      "confirmed": false
+    }
+  ],
+  "risks": [
+    {
+      "id": "demo-risk",
+      "text": "Validation effort is not yet confirmed",
+      "owner": "Engineer A",
+      "next_action": "Review the remaining validation tasks",
+      "status": "Open"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "demo-decision",
+      "text": "Prioritize automated testing",
+      "owner": "Engineer B",
+      "status": "Confirmed"
+    }
+  ],
+  "actions": [
+    {
+      "id": "demo-action",
+      "text": "Review documentation improvements",
+      "owner": "Engineer C",
+      "due": "2030-04-05",
+      "status": "Open"
+    }
+  ],
+  "final_checks": [
+    {
+      "id": "1ebce3c9-9267-4737-8e51-9e9926fd2aef",
+      "label": "Sprint goal agreed",
+      "checked": false
+    },
+    {
+      "id": "6c0b4bca-899a-49ba-ad8f-50f22d7c1065",
+      "label": "Calendar and time off reviewed",
+      "checked": false
+    },
+    {
+      "id": "d4b486c6-73c0-499c-8e2c-5eeb10f592a4",
+      "label": "Dependencies reviewed",
+      "checked": false
+    },
+    {
+      "id": "a0c5e6db-bbd5-4041-8c0c-1386e76daefe",
+      "label": "Risks recorded",
+      "checked": false
+    },
+    {
+      "id": "637456b3-d6ef-4b4a-9640-0fdda5ed70cf",
+      "label": "Individual commitments confirmed",
+      "checked": false
+    },
+    {
+      "id": "88a36d41-837c-4b48-8de4-e9bf257f5fd6",
+      "label": "Next actions assigned",
+      "checked": false
+    }
+  ],
+  "holidays": [
+    {
+      "id": "demo-holiday",
+      "title": "Example team holiday",
+      "date": "2030-04-05"
+    }
+  ],
+  "time_off": [
+    {
+      "id": "demo-time-off",
+      "member_id": "f9540450-bf18-4d3d-b246-19d049ed0e64",
+      "start": "2030-04-08",
+      "end": "2030-04-10",
+      "note": "Planned leave"
+    }
+  ],
+  "planning": {
+    "objective": "Improve release readiness",
+    "deliverables": "Automated testing and documentation improvements",
+    "dependencies": "Platform integration validation",
+    "risks": "Validation effort needs review",
+    "notes": "Confirm scope during planning",
+    "pending_decisions": "Agree the testing sequence"
+  }
+}

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SprintDeck | Control room</title>
+  <link rel="stylesheet" href="/static/app.css">
+  <script type="module" src="/static/control.js"></script>
+</head>
+<body class="control">
+  <aside class="navigation">
+    <a class="brand" href="/control"><span class="brand-mark">SD</span> SprintDeck</a>
+    <p class="eyebrow">FACILITATOR WORKSPACE</p>
+    <nav aria-label="Dashboard sections">
+      <a href="#ceremony">Ceremony</a><a href="#overview">Overview</a>
+      <a href="#calendar">Calendar & time off</a><a href="#team">Team</a><a href="#individual">Individual review</a>
+      <a href="#commitment">Commitment</a><a href="#notes">Session notes & recap</a><a href="#settings">Settings</a>
+    </nav>
+    <div class="nav-footer"><span class="status-dot"></span> Local session<br><small>Your data stays on this device.</small></div>
+  </aside>
+  <main class="dashboard">
+    <header class="dashboard-header"><div><p class="eyebrow">YOUR NEXT SPRINT, IN FOCUS</p><h1>Planning control room</h1><p>Keep the conversation moving. Give every commitment a clear place.</p></div><span id="connection" class="badge">Connecting</span></header>
+    <div id="feedback" role="status" aria-live="polite">Loading session...</div>
+    <div id="workspace"></div>
+  </main>
+</body>
+</html>
