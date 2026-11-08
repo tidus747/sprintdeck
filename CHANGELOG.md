@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Added the supplied SprintDeck logo to the controller, all presentation scenes, Welcome, website navigation, homepage, footer, and browser icons.
+- Consolidated the brand artwork into one canonical application asset, copied into the static website build.
+
 - Aligned the documentation website with SprintDeck's blue, navy, white, and gray palette, replacing the earlier green website theme.
 - Made repeated documentation builds tolerate copied read-only asset directories on Windows.
 

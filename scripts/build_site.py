@@ -155,6 +155,7 @@ def build(output, base="/sprintdeck"):
         plain = PlainText(); plain.feed(content)
         index.append({"title": title, "group": group, "url": f"{base}/docs/{slug}/", "text": " ".join(plain.parts)})
     shutil.copytree(ROOT / "website/assets", output / "assets")
+    shutil.copyfile(ROOT / "sprintdeck/static/logo.svg", output / "assets/logo.svg")
     (output / "assets/search-index.json").write_text(json.dumps(index, ensure_ascii=True), encoding="utf-8")
     (output / "downloads").mkdir()
     shutil.copyfile(ROOT / "examples/demo-session.json", output / "downloads/demo-session.json")

@@ -30,6 +30,8 @@ Homepage copy is in `website/templates/home.html`; the documentation shell is in
 
 The website uses the application's visual identity: planning blue (`#245bc6`), navy text (`#17253e`), white backgrounds, gray surfaces (`#f4f7fb`), and soft borders (`#dfe5ed`). Use these colors for website accents, navigation, code examples, and call-to-action buttons. Semantic colors inside application screenshots remain part of the application UI.
 
+The supplied logo is kept in `sprintdeck/static/logo.svg`, with the original raster artwork embedded and framed as a rounded icon. This canonical asset serves the local app and is copied to `assets/logo.svg` by the website build. Do not maintain a second logo copy. The shared icon appears in the controller, every overlay, website navigation, homepage, footer, and favicons. Bump its URL version when replacing the artwork so cached browser sources refresh it.
+
 The visual direction takes the linked [Varsha theme](https://astro.build/themes/details/varsha/) as a reference for a landing page and documentation experience. This is an original HTML/CSS implementation; no Varsha code, branding, or assets are copied. The site does not require Astro or change the application's vanilla frontend.
 
 ## Screenshots

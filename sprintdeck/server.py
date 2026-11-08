@@ -14,6 +14,7 @@ STATIC = Path(__file__).parent / "static"
 ROUTES = {"/control": ("control.html", "text/html"),
           **{f"/overlays/{scene}": ("overlay.html", "text/html") for scene in ("overview", "individual", "wrapup", "discussion", "welcome", "roadmap")},
           "/static/app.css": ("app.css", "text/css"),
+          "/static/logo.svg": ("logo.svg", "image/svg+xml"),
           "/static/common.js": ("common.js", "text/javascript"),
           "/static/calendar.js": ("calendar.js", "text/javascript"),
           "/static/control.js": ("control.js", "text/javascript"),
@@ -41,12 +42,13 @@ class Handler(BaseHTTPRequestHandler):
         self.send_response(status)
         self.send_header("Content-Type", content_type + "; charset=utf-8")
         self.send_header("Content-Length", str(len(body)))
-        self.send_header("Cache-Control", "no-store")
+        self.send_header("Cache-Control", "public, max-age=86400" if content_type == "image/svg+xml" else "no-store")
         if attachment:
             self.send_header("Content-Disposition", f'attachment; filename="{attachment}"')
         self.send_header("X-Content-Type-Options", "nosniff")
         self.send_header("Referrer-Policy", "no-referrer")
-        self.send_header("Content-Security-Policy", "default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'")
+        image_source = "'self' data:" if content_type == "image/svg+xml" else "'self'"
+        self.send_header("Content-Security-Policy", f"default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src {image_source}; frame-ancestors 'none'; base-uri 'none'; form-action 'self'")
         self.end_headers()
         self.wfile.write(body)
 

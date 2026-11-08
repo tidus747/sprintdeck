@@ -76,6 +76,7 @@ class SiteTests(unittest.TestCase):
             self.assertFalse(path.endswith(".session.json"), path)
         demo = json.loads((self.output / "downloads/demo-session.json").read_text())
         self.assertEqual([value["name"] for value in demo["members"]], [f"Engineer {letter}" for letter in "ABCDE"])
+        self.assertEqual((self.output / "assets/logo.svg").read_bytes(), (ROOT / "sprintdeck/static/logo.svg").read_bytes())
 
     def test_output_guard_preserves_unrelated_content(self):
         protected = Path(self.temp.name) / "unrelated"

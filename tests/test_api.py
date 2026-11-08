@@ -38,7 +38,7 @@ class APITests(unittest.TestCase):
         return self.request("POST", "/api/actions", json.dumps(action), {"Content-Type": "application/json"})
 
     def test_health_and_presentation_routes(self):
-        for route in ("/health", "/control", "/overlays/welcome", "/overlays/roadmap", "/overlays/overview", "/overlays/individual", "/overlays/wrapup", "/overlays/discussion", "/static/app.css", "/static/control.js", "/static/overlay.js", "/static/common.js", "/static/calendar.js", "/static/demo-session.json"):
+        for route in ("/health", "/control", "/overlays/welcome", "/overlays/roadmap", "/overlays/overview", "/overlays/individual", "/overlays/wrapup", "/overlays/discussion", "/static/app.css", "/static/logo.svg?v=brand-1", "/static/control.js", "/static/overlay.js", "/static/common.js", "/static/calendar.js", "/static/demo-session.json"):
             with self.subTest(route=route):
                 status, headers, body = self.request("GET", route)
                 self.assertEqual(status, 200)

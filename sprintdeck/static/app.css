@@ -24,7 +24,9 @@ button:hover:not(:disabled), .button-link:hover { filter: brightness(.96); }
 .danger { background: #fff6ef; color: #983c1d; border-color: #f0d0bf; }
 :focus-visible { outline: 3px solid #4695ff; outline-offset: 3px; }
 .brand { display: flex; align-items: center; gap: 12px; color: var(--navy); text-decoration: none; font-size: 22px; font-weight: 750; letter-spacing: -.6px; }
-.brand-mark { display: inline-grid; place-items: center; background: var(--blue); color: white; border-radius: 11px; width: 40px; height: 40px; font-size: 17px; letter-spacing: -1px; flex: 0 0 auto; }
+.brand-mark { display: block; object-fit: contain; width: 60px; height: 60px; flex: 0 0 auto; }
+.navigation .brand-mark { width: 52px; height: 52px; }
+.navigation .brand { gap: 8px; font-size: 20px; }
 .eyebrow { font-size: 11px; letter-spacing: 1.4px; font-weight: 700; color: var(--muted); }
 .muted { color: var(--muted); }
 .badge { display: inline-flex; align-items: center; align-self: start; border: 1px solid var(--border); color: var(--muted); background: #f8fafc; border-radius: 30px; padding: 5px 11px; font-size: 12px; font-weight: 650; white-space: nowrap; max-width: 100%; overflow: hidden; text-overflow: ellipsis; }
@@ -194,7 +196,9 @@ html:has(.presentation), .presentation { background: transparent; overflow: hidd
 .welcome-canvas { background: #f4f7fb; }
 .welcome-content { display: flex; flex-direction: column; justify-content: center; flex: 1; min-height: 0; padding: 54px 96px; background: white; border: 1px solid var(--border); border-radius: 20px; border-left: 8px solid var(--blue); }
 .welcome-intro { max-width: 1500px; }
-.welcome-intro > .badge { font-size: 17px; padding: 9px 18px; margin-bottom: 34px; }
+.welcome-branding { display: flex; align-items: center; gap: 24px; margin-bottom: 26px; }
+.welcome-branding > .badge { align-self: center; font-size: 17px; padding: 9px 18px; }
+.welcome-logo { display: block; width: 96px; height: 96px; object-fit: contain; flex: 0 0 auto; }
 .welcome-intro > .eyebrow { font-size: 15px; letter-spacing: 3px; margin-bottom: 12px; }
 .welcome-sprint { font-size: 100px; letter-spacing: -4px; line-height: 1.06; overflow-wrap: anywhere; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .welcome-goal { font-size: 28px; line-height: 1.45; margin-top: 26px; max-width: 1350px; overflow-wrap: anywhere; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }

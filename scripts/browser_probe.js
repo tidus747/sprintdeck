@@ -41,7 +41,7 @@ try {
   assert(welcome.contentDocument.querySelector('.welcome-sprint').textContent === raw.sprint.next, 'Welcome scene has the wrong sprint');
   assert(welcome.contentDocument.body.textContent.includes('Planning starts shortly'), 'Welcome scene is missing its starting message');
   await until(() => welcome.contentDocument.body.textContent.includes('Technical validation'), 'Welcome scene did not synchronize the goal');
-  assert(!welcome.contentDocument.querySelector('img'), 'Welcome goal was rendered as HTML');
+  assert(!welcome.contentDocument.querySelector('.welcome-goal img'), 'Welcome goal was rendered as HTML');
 
   const milestone = cdoc().querySelector('form[data-key="roadmap-new"]');
   milestone.closest('details').open = true;
@@ -82,7 +82,7 @@ try {
   setInput(sharedForm.elements.namedItem('notes'), '<img src=x onerror=alert(1)>');
   sharedForm.requestSubmit();
   await until(() => odoc().body.textContent.includes('Shared objective draft'), 'Shared context did not update');
-  assert(!odoc().querySelector('img'), 'User text became an image element');
+  assert(!odoc().querySelector('.individual-notes img'), 'User text became an image element');
   assert(odoc().body.textContent.includes('<img src=x onerror=alert(1)>'), 'User text was not displayed safely');
   assert(!cdoc().querySelector('[name="available"]') && !odoc().querySelector('.capacity'), 'Capacity UI was not removed');
   findButton('Next member').click();
@@ -141,6 +141,8 @@ try {
     assert(!region.children.length, 'Capture aperture obscures the source');
   }
   for (const frame of [overlay, overview, discussion, roadmap, welcome, wrapup]) {
+    const logo = frame.contentDocument.querySelector('.brand-mark');
+    assert(logo?.tagName === 'IMG' && logo.complete && logo.naturalWidth > 0, 'Application logo did not load');
     const time = frame.contentDocument.querySelector('[data-local-clock]');
     assert(time?.dateTime && time.textContent.includes(':'), 'Local date and time is missing');
     const format = new frame.contentWindow.Intl.DateTimeFormat('en-GB', {year: 'numeric', month: 'short', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false, timeZoneName: 'short'});

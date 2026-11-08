@@ -53,11 +53,17 @@ function capture(label = 'Planning application capture') {
 function header() {
   const title = {individual: 'Individual Planning', overview: 'Overview', wrapup: 'Commitment & Wrap-up', discussion: 'Board Discussion', welcome: 'Welcome', roadmap: 'Roadmap Review'}[scene];
   const head = el('header', 'scene-header');
-  const branding = append(el('div', 'brand'), el('span', 'brand-mark', 'SD'), el('span', '', 'SprintDeck'));
+  const branding = append(el('div', 'brand'), brandLogo(), el('span', '', 'SprintDeck'));
   const context = append(el('div', 'scene-context'), el('p', 'eyebrow', 'SPRINT PLANNING'), el('h1', '', title));
   const sprints = append(el('div', 'sprint-identifiers'), el('small', 'muted', `CURRENT  ${state.sprint.current}`), el('strong', '', state.sprint.next), badge(state.sprint.status, 'blue'));
   append(head, branding, context, sprints, timerView('meeting', 'Meeting remaining'));
   return head;
+}
+
+function brandLogo(className = 'brand-mark') {
+  const logo = el('img', className);
+  logo.src = '/static/logo.svg?v=brand-1'; logo.alt = ''; logo.width = 60; logo.height = 60;
+  return logo;
 }
 
 function teamList() {
@@ -133,7 +139,7 @@ function renderWrapup() {
 function renderWelcome() {
   const content = el('section', 'welcome-content');
   const intro = el('div', 'welcome-intro');
-  append(intro, badge('Planning starts shortly', 'blue'), el('p', 'eyebrow', state.session.title),
+  append(intro, append(el('div', 'welcome-branding'), brandLogo('welcome-logo'), badge('Planning starts shortly', 'blue')), el('p', 'eyebrow', state.session.title),
     el('h2', 'welcome-sprint', state.sprint.next),
     el('p', 'welcome-goal', state.sprint.goal || 'We will align the sprint goal together.'),
     el('p', 'welcome-message', 'Settle in. We will begin shortly.'));
