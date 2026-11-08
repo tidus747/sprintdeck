@@ -8,6 +8,7 @@
 - Passed a real Chrome website check covering the scene gallery, image loading, local search, documentation paths, and a 390 px mobile iframe without horizontal overflow.
 - Inspected the homepage and documentation layout in browser screenshots. Reviewed all six public demo images. They show actual overlays with fictional content and clearly identified illustrative captures, not the user's OBS window.
 - GitHub Pages publication must be confirmed separately by the remote workflow and live site response. Repository writes do not establish that Pages is enabled.
+- Remote GitHub Actions checks passed on Windows and Linux with Python 3.11 and 3.14. The documentation build, including the five website checks and Pages artifact upload, also passed. Pages requires the repository publishing source to be enabled separately before deployment can succeed.
 
 ## Current scene refinements
 
@@ -53,7 +54,7 @@ An additional narrow controller screenshot attempt timed out, so narrow-screen a
 - OBS Browser Source alpha compositing, actual Window Capture crop/alignment, and source ordering.
 - Live meeting software virtual camera/projector output and audience readability.
 - Keyboard-only navigation and a screen reader pass.
-- Linux runtime and the configured Windows/Linux GitHub Actions matrix, which were not executed here.
+- Interactive Linux browser and OBS use. The Windows/Linux Python test matrix has passed remotely; this does not replace desktop presentation testing.
 - Larger teams and maximum-length text in actual meeting presentation conditions.
 
 Use the practical checklist in [obs-setup.md](obs-setup.md) before presenting. This verification does not claim an OBS session or public release was performed.
