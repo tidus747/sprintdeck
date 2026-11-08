@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Aligned the documentation website with SprintDeck's blue, navy, white, and gray palette, replacing the earlier green website theme.
+- Made repeated documentation builds tolerate copied read-only asset directories on Windows.
+
 - Added a public documentation homepage explaining the facilitation workflow, searchable guides, and a six-scene screenshot gallery.
 - Added a static GitHub Pages build/deploy workflow and an optional pinned documentation-only Markdown dependency.
 - Added repeatable screenshots from temporary fictional sessions, with clearly labeled illustrative board and roadmap content.

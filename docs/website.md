@@ -28,6 +28,8 @@ Edit repository Markdown under `docs/` and the root contribution files. The gene
 
 Homepage copy is in `website/templates/home.html`; the documentation shell is in `website/templates/page.html`. Shared styling and small browser interactions live in `website/assets/`. The homepage explains the practical meeting problem: goals, review order, timeboxes, decisions, and next steps often live outside the task board. Claims describe implemented behavior rather than unmeasured productivity gains.
 
+The website uses the application's visual identity: planning blue (`#245bc6`), navy text (`#17253e`), white backgrounds, gray surfaces (`#f4f7fb`), and soft borders (`#dfe5ed`). Use these colors for website accents, navigation, code examples, and call-to-action buttons. Semantic colors inside application screenshots remain part of the application UI.
+
 The visual direction takes the linked [Varsha theme](https://astro.build/themes/details/varsha/) as a reference for a landing page and documentation experience. This is an original HTML/CSS implementation; no Varsha code, branding, or assets are copied. The site does not require Astro or change the application's vanilla frontend.
 
 ## Screenshots
