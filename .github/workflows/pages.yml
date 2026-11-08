@@ -20,7 +20,8 @@ jobs:
         with:
           python-version: '3.11'
       - name: Install documentation build dependency
-        run: python -m pip install --require-hashes --only-binary=:all: -r website/requirements.txt
+        run: |
+          python -m pip install --require-hashes --only-binary=:all: -r website/requirements.txt
       - name: Check repository text and application
         run: |
           python scripts/check_style.py
